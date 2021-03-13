@@ -101,9 +101,9 @@ python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_comple
 
 ## Demos (4x)
 
-<img src="images/a.gif" alt="a" style="zoom: 33%;" />  <img src="images/b.gif" alt="b" style="zoom: 33%;" /> 
+<img src="images/a.gif" alt="a" style="zoom: 25%;" />  <img src="images/b.gif" alt="b" style="zoom: 25%;" /> 
 
-<img src="images/c.gif" alt="c" style="zoom: 33%;" />  <img src="images/d.gif" alt="d" style="zoom: 33%;" /> 
+<img src="images/c.gif" alt="c" style="zoom: 25%;" />  <img src="images/d.gif" alt="d" style="zoom: 25%;" /> 
 
 ## Acknowledgment
 
