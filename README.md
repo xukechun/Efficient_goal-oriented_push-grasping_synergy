@@ -35,7 +35,7 @@ In the first stage, we train a goal-conditioned grasp net. To improve the sample
 python main.py --stage grasp_only --num_obj 5 --grasp_goal_conditioned --goal_conditioned --goal_obj_idx k --experience_replay --explore_rate_decay --save_visualizations
 ```
 
-k is the index of the object. During our training, we set k=4.
+k is the index of the object. During our training, we set `k=4`.
 
 We use  ε-greedy strategy for exploration. And we find that exploring with a pre-trained goal-agnostic grasp model can effectively speed up the training process. In this case, we need to load our pre-trained grasp net without any goal conditions.
 
@@ -101,9 +101,13 @@ python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_comple
 
 ## Demos (4x)
 
-<img src="images/a.gif" alt="a" style="zoom: 25%;" />  <img src="images/b.gif" alt="b" style="zoom: 25%;" /> 
+<center class="half">
+	<img src="images/a.gif" alt="a" style="zoom: 33%;" />  <img src="images/b.gif" alt="b" style="zoom: 33%;" /> 
+</center>
 
-<img src="images/c.gif" alt="c" style="zoom: 25%;" />  <img src="images/d.gif" alt="d" style="zoom: 25%;" /> 
+<center class="half">
+	<img src="images/c.gif" alt="c" style="zoom: 33%;" />  <img src="images/d.gif" alt="d" style="zoom: 33%;" /> 
+</center>
 
 ## Acknowledgment
 
