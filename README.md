@@ -101,39 +101,9 @@ python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_comple
 
 ## Demos (4x)
 
-<img src="images/a.gif" alt="a" width="330" align="left"/><img src="images/b.gif" alt="b" width="330" align="left"/>
+<img src="images/a.gif" alt="a" width="330" /><img src="images/b.gif" alt="b" width="330" />
 
-<img src="images/c.gif" alt="c" width="330" align="left"/><img src="images/d.gif" alt="d" width="330" align="left"/> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="images/c.gif" alt="c" width="330" /><img src="images/d.gif" alt="d" width="330"/> 
 
 ## Acknowledgment
 
