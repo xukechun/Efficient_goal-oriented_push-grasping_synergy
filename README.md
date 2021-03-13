@@ -125,6 +125,16 @@ python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_comple
 
 
 
+
+
+
+
+
+
+
+
+
+
 ## Acknowledgment
 
 We use the code in https://github.com/andyzeng/visual-pushing-grasping.
