@@ -11,7 +11,7 @@ We focus on the task of goal-oriented grasping, in which a robot is supposed to 
 
 #### Contact
 
-Any questions, please let me know: kcxu@zju.edu.cn
+Any question, please let me know: kcxu@zju.edu.cn
 
 ## Installation
 
