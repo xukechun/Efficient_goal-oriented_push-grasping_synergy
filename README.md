@@ -1,11 +1,9 @@
 # Efficient learning of goal-oriented push-grasping synergy in clutter
 This is the official repository for the paper: Efficient learning of goal-oriented push-grasping synergy in clutter.
 
-The paper is available at https://arxiv.org/abs/2103.05405
+Paper: https://arxiv.org/abs/2103.05405
 
-Video: 
-
-[youtube]: https://www.youtube.com/watch?v=eebhyfbtmHA
+Video:  [YouTube](https://www.youtube.com/watch?v=eebhyfbtmHA) | [Bilibili](https://www.bilibili.com/video/BV1sK4y1U7nJ/)
 
 ![introductory video](images/paper_video.gif)
 
