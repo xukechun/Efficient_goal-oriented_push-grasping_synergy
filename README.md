@@ -42,6 +42,13 @@ k is the index of the object. During our training, we set `k=4`.
 We use  ε-greedy strategy for exploration. And we find that exploring with a pre-trained goal-agnostic grasp model can effectively speed up the training process. In this case, we need to load our pre-trained grasp net without any goal conditions.
 
 ```python
+# for goal-agnostic grasp net training
+python main.py --stage grasp_only --num_obj 5 --goal_conditioned --goal_obj_idx k --experience_replay --explore_rate_decay --save_visualizations
+```
+
+
+
+```python
 python main.py --stage grasp_only --num_obj 5 --grasp_goal_conditioned --goal_conditioned --goal_obj_idx k --experience_replay --explore_rate_decay --save_visualizations --grasp_explore --load_explore_snapshot --explore_snapshot_file 'DIRECTORY OF YOUR PRE-TRAINDE GOAL-AGNOSTIC GRASP NET'
 ```
 
@@ -106,6 +113,22 @@ python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_comple
 <img src="images/a.gif" alt="a" width="330" /><img src="images/b.gif" alt="b" width="330" />
 
 <img src="images/c.gif" alt="c" width="330" /><img src="images/d.gif" alt="d" width="330"/> 
+
+## Citation
+
+If you find this work useful, please consider citing:
+
+```
+@ARTICLE{9465702,
+  author={Xu, Kechun and Yu, Hongxiang and Lai, Qianen and Wang, Yue and Xiong, Rong},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Efficient Learning of Goal-Oriented Push-Grasping Synergy in Clutter}, 
+  year={2021},
+  volume={6},
+  number={4},
+  pages={6337-6344},
+  doi={10.1109/LRA.2021.3092640}}
+```
 
 ## Acknowledgment
 
