@@ -233,7 +233,7 @@ class Robot(object):
 
             mesh = trimesh.load_mesh(obj_mesh_file)
 
-            if self.obj_mesh_ind[object_idx] == 2 or self.obj_mesh_ind[object_idx] == 5:
+            if obj_mesh_file.split('/')[-1] == '2.obj' or obj_mesh_file.split('/')[-1] == '6.obj':
                 mesh.apply_transform(obj_pose)
             else:
                 # rest
@@ -296,7 +296,7 @@ class Robot(object):
         mesh = trimesh.load_mesh(obj_mesh_file)
 
         # transform the mesh to world frame
-        if self.obj_mesh_ind[obj_ind] == 2 or self.obj_mesh_ind[obj_ind] == 5:
+        if obj_mesh_file.split('/')[-1] == '2.obj' or obj_mesh_file.split('/')[-1] == '6.obj':
             mesh.apply_transform(obj_pose)
         else:
             # rest

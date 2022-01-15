@@ -298,9 +298,9 @@ def main(args):
                     safe_kernel_width = int(np.round((finger_width/2)/heightmap_resolution))
                     local_region = valid_depth_heightmap[max(best_pix_y - safe_kernel_width, 0):min(best_pix_y + safe_kernel_width + 1, valid_depth_heightmap.shape[0]), max(best_pix_x - safe_kernel_width, 0):min(best_pix_x + safe_kernel_width + 1, valid_depth_heightmap.shape[1])]
                     if local_region.size == 0:
-                        safe_z_position = workspace_limits[2][0] - 0.01
+                        safe_z_position = workspace_limits[2][0] - 0.02
                     else:
-                        safe_z_position = np.max_z_position = np.max(local_region) + workspace_limits[2][0] - 0.01
+                        safe_z_position = np.max_z_position = np.max(local_region) + workspace_limits[2][0] - 0.02
                     primitive_position[2] = safe_z_position
                     print('3D z position:', primitive_position[2])
 
