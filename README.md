@@ -1,3 +1,5 @@
+
+
 # Efficient learning of goal-oriented push-grasping synergy in clutter
 This is the official repository for the paper: Efficient learning of goal-oriented push-grasping synergy in clutter.
 
@@ -108,6 +110,8 @@ We use three metrics to evaluate the performance: completion, grasp success rate
 python evaluate.py --session_directory 'YOUR SESSION DIRECTORY' --num_obj_complete 1
 ```
 
+The `--num_obj_complete` argument specifies the number of objects picked before considering the task complete.
+
 ## Demos (4x)
 
 <img src="images/a.gif" alt="a" width="330" /><img src="images/b.gif" alt="b" width="330" />
@@ -133,4 +137,3 @@ If you find this work useful, please consider citing:
 ## Acknowledgment
 
 We use the code in https://github.com/andyzeng/visual-pushing-grasping.
-
