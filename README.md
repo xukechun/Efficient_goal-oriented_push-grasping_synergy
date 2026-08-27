@@ -62,6 +62,13 @@ python main.py --stage push_only --grasp_reward_threshold Qg --grasp_goal_condit
 
 **How to confirm `Qg`?**  `Qg` is a threshold of grasp q value which infers a high graspable probability. This value is confirmed based on the former training stage. During our training in the former stage, grasping success rate of goal object would become stable above 80% while grasp Q-value stays stably above `Qg=1.8`. Thus it is reasonable to regard  `Qg=1.8` as a threshold to evaluate whether is suitable for goal grasping.
 
+If stage 2 is interrupted, resume it by passing the latest stage-2 snapshot (e.g. `SESSION_DIRECTORY/models/snapshot-NNNNNN.push_only.pth` or `SESSION_DIRECTORY/models/snapshot-backup.push_only.pth`) to `--snapshot_file`, and use `--continu_logging --logging_directory SESSION_DIRECTORY` to keep the same logging session. For example:
+
+```python
+python main.py --stage push_only --grasp_reward_threshold Qg --grasp_goal_conditioned --goal_conditioned --goal_obj_idx k --experience_replay --explore_rate_decay --save_visualizations --load_snapshot --snapshot_file 'SESSION_DIRECTORY/models/snapshot-NNNNNN.push_only.pth' --continu_logging --logging_directory 'SESSION_DIRECTORY'
+```
+
+
 #### 3. Alternating training
 
 In the previous stage, we just consider the grasp net as an expert and fix its network parameters when training the push net. However, the former grasping net is trained in a relatively scattered environment where there is little occlusion around the goal object with only grasp actions. In this stage, we aim to further improve the performance of our pushing and grasping policies in cluttered environments by alternately training to relieve the the problem of distribution mismatch.
